@@ -162,4 +162,3 @@ cython_debug/
 venv/*
 demo.*
 mymodel.*
-*.wasm
