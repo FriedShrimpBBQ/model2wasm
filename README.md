@@ -49,3 +49,7 @@ just build-wasm mymodel.pkl mymodel.go mymodel.wasm
 wasmer mymodel.wasm -- 1 2 -2 -1
 # output - 199
 ```
+
+## Notes
+
+Since I'm still getting around learning `go` there are going to be patterns which don't make sense to a seasoned programmer. One example is I don't understand `go generate`- does that help or hinder this pipeline?
