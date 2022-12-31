@@ -12,7 +12,7 @@ pip install m2cgen
 
 You will need to install the appropriate depedencies along with `m2cgen` depending on your model choice, e.g. `pip install m2cgen scikit-learn`
 
-Also make sure you have [Go](https://golang.google.cn/) and [TinyGo](https://tinygo.org/) installed. Optionally you may want to install [just](https://github.com/casey/just)
+Also make sure you have [Go](https://golang.google.cn/) and [TinyGo](https://tinygo.org/) installed. Optionally you may want to install [just](https://github.com/casey/just) and [wasmer](https://wasmer.io/)
 
 ## Usage
 
