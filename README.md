@@ -19,18 +19,9 @@ Also make sure you have [Go](https://golang.google.cn/) and [TinyGo](https://tin
 The rough workflow is:
 
 1. Generate the model (in Go) via m2cgen
-2. Generate the Go code
-3. Generate the TinyGo compatible code for WASM build
 4. Build the WASM file
 
 It would look something like the below (has some missing arguments, check `justfile` for details:
-
-```sh
-$ m2cgen mymodel.pkl --language go > model2tinygo.go
-$ go run model2tinygo.go > main.go
-$ tinygo build -o output.wasm -target=wasi -wasm-abi=generic main.go
-$ wasmer output.wasm -- 1 2 -2 -1
-```
 
 This has been abstracted away via [just](https://github.com/casey/just) where you can run
 
